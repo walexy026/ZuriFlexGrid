@@ -4,14 +4,17 @@
     box-sizing: border-box;
 }
 body{
-    background-color: hsl(0, 0%, 95%);
     font-family: 'Lexend Deca', sans-serif;
+    
+}
+.flexbox{
+    /* background-color: hsl(0, 0%, 95%); */
     display: flex; 
     align-items: center;
     margin: 200px;
     font-size: 15px;
     justify-content: center;
-   
+
 }
 
 main{
@@ -81,3 +84,47 @@ button{
     background-color:hsl(0, 0%, 95%) ;
 color: hsl(179, 100%, 13%);
 }
+
+/*GRIDBOX*/
+.gridbox{
+    margin: 100px;
+    /* background-color: blueviolet; */
+    display: grid;
+    grid-template-columns:auto auto auto  ;
+    grid-gap: 2vw;
+    text-align: center;
+}
+
+.gridbox .div1{
+    background-color: rgb(245, 14, 14);
+    padding: 50px;
+    grid-column: 1/3;
+    /* grid-row: 3/3; */
+}
+.div2{
+    background-color: orange;
+    padding: 50px;
+     /* grid-column: 3/4; */
+    /* grid-row: 2;  */
+}
+.div3{
+    background-color: rgb(94, 145, 18);
+    padding: 50px;
+    grid-column: 1/2;
+    grid-row: 2/4;
+    /* height: 50px; */
+}
+.div4{
+    background-color: rgb(59, 197, 231);
+    padding: 25px;
+    grid-column: 2/4;
+    /* height: 50px; */ 
+    /* grid-row: 1/3; */
+}
+.div5{
+    background-color: blue;
+    padding: 25px;
+    /* height: 50px; */
+    grid-column:2/4;
+    /* grid-row: 1;  */
+} 
